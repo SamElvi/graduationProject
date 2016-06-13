@@ -1,0 +1,382 @@
+[ 2016-05-28T16:20:58+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002794s ]
+
+[ 2016-05-28T16:21:10+08:00 ] ::1 /graduationproject/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+
+[ 2016-05-28T16:21:40+08:00 ] ::1 /graduationproject/index.php/home/login/forgot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-05-28T16:21:56+08:00 ] ::1 /graduationproject/index.php/home/login/sentchangepasswordcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = '2854592436@qq.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0181s ]
+SQL: DELETE FROM `gt_changecode` WHERE ( account = "2854592436@qq.com" ) [ RunTime:0.0096s ]
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `gt_changecode` (`account`,`code`) VALUES ('2854592436@qq.com','fd19f6ae9f4d2fce9be943e58f9e996b') [ RunTime:0.0070s ]
+
+[ 2016-05-28T16:22:48+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003904s ]
+
+[ 2016-05-28T16:22:48+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2016-05-28T16:23:02+08:00 ] ::1 /graduationproject/index.php/home/login/changpasswordbyforgot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gt_login` WHERE `account` = '2854592436@qq.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gt_changecode` WHERE `account` = '2854592436@qq.com' LIMIT 1   [ RunTime:0.0037s ]
+SQL: UPDATE `gt_login` SET `password`='e10adc3949ba59abbe56e057f20f883e' WHERE `id` = 24 AND `status` = 1 [ RunTime:0.0050s ]
+
+[ 2016-05-28T16:23:11+08:00 ] ::1 /graduationproject/index.php/home/login/changpasswordbyforgot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `gt_login` WHERE `account` = '2854592436@qq.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gt_changecode` WHERE `account` = '2854592436@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `gt_login` SET `password`='827ccb0eea8a706c4c34a16891f84e7b' WHERE `id` = 24 AND `status` = 1 [ RunTime:0.0023s ]
+
+[ 2016-05-28T16:23:17+08:00 ] ::1 /graduationproject/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-05-28T16:23:28+08:00 ] ::1 /graduationproject/index.php/home/login/trylogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = 'sam@163.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-28T16:23:37+08:00 ] ::1 /graduationproject/index.php/home/login/trylogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = 'sam@163.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-28T16:23:41+08:00 ] ::1 /graduationproject/index.php/home/login/trylogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = 'sam@163.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-28T16:23:42+08:00 ] ::1 /graduationproject/index.php/home/login/trylogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = 'sam@163.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-28T16:23:46+08:00 ] ::1 /graduationproject/index.php/home/login/trylogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = 'sam@163.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-28T16:24:01+08:00 ] ::1 /graduationproject/index.php/home/login/trylogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = '2854592436@qq.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-28T16:24:03+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2016-05-28T16:24:09+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1040.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+
+[ 2016-05-28T16:24:09+08:00 ] ::1 /graduationproject/index.php/home/user/myspace/userid/1040.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2016-05-28T16:24:17+08:00 ] ::1 /graduationproject/index.php/home/user/updateusername.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0035s ]
+SQL: UPDATE `gt_user` SET `name`='和睦' WHERE `id` = 1040 AND `status` = 1 [ RunTime:0.0003s ]
+SQL: UPDATE `gt_login` SET `username`='和睦' WHERE `id` = 24 AND `status` = 1 [ RunTime:0.0035s ]
+
+[ 2016-05-28T16:24:27+08:00 ] ::1 /graduationproject/index.php/home/user/updateuserintroduction.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: UPDATE `gt_user` SET `selfintroduction`='帅耶' WHERE `id` = 1040 AND `status` = 1 [ RunTime:0.0031s ]
+
+[ 2016-05-28T16:24:31+08:00 ] ::1 /graduationproject/index.php/home/books/detail/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2016-05-28T16:24:43+08:00 ] ::1 /graduationproject/index.php/home/user/mymailbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2016-05-28T16:24:43+08:00 ] ::1 /graduationproject/index.php/home/message/openmails.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `gt_mail` SET `status`='1' WHERE `toid` = 1040 AND `status` = 0 [ RunTime:0.0027s ]
+
+[ 2016-05-28T16:25:03+08:00 ] ::1 /graduationproject/index.php/home/message/booksmail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003843s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `gt_mail` (`fromid`,`toid`,`content`,`fromname`) VALUES ('1040','1035','收到了','和睦') [ RunTime:0.0003s ]
+
+[ 2016-05-28T16:25:07+08:00 ] ::1 /graduationproject/index.php/home/articles/writearticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2016-05-28T16:25:53+08:00 ] ::1 /graduationproject/index.php/home/articles/savearticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003813s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for Home\Model\UserArticleModel::getArticleById(), called in /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ArticlesController.class.php on line 82 and defined /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Model/UserArticleModel.class.php 第 25 行.
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `gt_user_article` (`title`,`content`,`userid`,`lat`,`lng`,`status`) VALUES ('男神','<p>啦啦啦啦</p><h1><u><b>邓同是男神</b></u></h1>','1040','39.989058475591','116.34210177608','0') [ RunTime:0.0037s ]
+
+[ 2016-05-28T16:25:53+08:00 ] ::1 /graduationproject/index.php/home/articles/writearticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2016-05-28T16:26:04+08:00 ] ::1 /graduationproject/index.php/home/articles/writearticle/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2016-05-28T16:26:09+08:00 ] ::1 /graduationproject/index.php/home/articles/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2016-05-28T16:26:12+08:00 ] ::1 /graduationproject/index.php/home/articles/writearticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2016-05-28T16:26:17+08:00 ] ::1 /graduationproject/index.php/home/articles/writearticle/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-05-28T16:26:18+08:00 ] ::1 /graduationproject/index.php/home/articles/savearticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Home\Model\UserArticleModel::getArticleById(), called in /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ArticlesController.class.php on line 82 and defined /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Model/UserArticleModel.class.php 第 25 行.
+SQL: SELECT `id`,`userid`,`title`,`content`,`ctime`,`mtime`,`status`,`lat`,`lng`,`address` FROM `gt_user_article` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `gt_user_article` SET `title`='男神',`content`='<p>啦啦啦啦</p><h1><u><b>邓同是男神</b></u></h1>',`userid`='1040',`lat`='39.989058475591',`lng`='116.34210177608',`status`='1' WHERE ( id=17 ) [ RunTime:0.0002s ]
+
+[ 2016-05-28T16:26:18+08:00 ] ::1 /graduationproject/index.php/home/articles/articledetail/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+
+[ 2016-05-28T16:26:21+08:00 ] ::1 /graduationproject/index.php/home/articles/writearticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2016-05-28T16:26:23+08:00 ] ::1 /graduationproject/index.php/home/articles/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2016-05-28T16:26:30+08:00 ] ::1 /graduationproject/index.php/home/articles/articledetail/id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2016-05-28T16:26:38+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1040.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2016-05-28T16:26:38+08:00 ] ::1 /graduationproject/index.php/home/user/myspace/userid/1040.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2016-05-28T16:26:41+08:00 ] ::1 /graduationproject/index.php/home/articles/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2016-05-28T16:26:44+08:00 ] ::1 /graduationproject/index.php/home/articles/articledetail/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-05-28T16:26:47+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1037.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2016-05-28T16:26:53+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2016-05-28T16:26:58+08:00 ] ::1 /graduationproject/index.php/home/books/detail/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2016-05-28T16:27:05+08:00 ] ::1 /graduationproject/index.php/home/books/donatebooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+
+[ 2016-05-28T16:27:17+08:00 ] ::1 /graduationproject/index.php/home/img/getimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-05-28T16:27:29+08:00 ] ::1 /graduationproject/index.php/home/img/savecropimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Y /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ImgController.class.php 第 111 行.
+NOTIC: [8] Only variables should be passed by reference /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 43 行.
+
+[ 2016-05-28T16:28:04+08:00 ] ::1 /graduationproject/index.php/home/books/publicbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1040 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1040 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `gt_user_books` (`title`,`author`,`type`,`userid`,`lat`,`lng`,`content`,`cover`) VALUES ('男神日记','邓同','6','1040','39.989058475591','116.34210177608','a:2:{s:12:\"introduction\";s:15:\"男神的日志\";s:9:\"mycomment\";s:7:\"🐂逼\";}','1464424049.png') [ RunTime:0.0044s ]
+
+[ 2016-05-28T16:28:04+08:00 ] ::1 /graduationproject/index.php/home/books/donatebooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2016-05-28T16:28:07+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-05-28T16:28:09+08:00 ] ::1 /graduationproject/index.php/home/books/detail/id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-05-28T16:28:21+08:00 ] ::1 /graduationproject/index.php/home/books/detail/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2016-05-28T16:28:23+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1040.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-05-28T16:28:23+08:00 ] ::1 /graduationproject/index.php/home/user/myspace/userid/1040.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+
+[ 2016-05-28T16:28:28+08:00 ] ::1 /graduationproject/index.php/home/articles/articledetail/id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+

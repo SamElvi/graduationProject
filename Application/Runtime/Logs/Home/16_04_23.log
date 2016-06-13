@@ -1,0 +1,10 @@
+[ 2016-04-23T16:25:39+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1036.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007077s ]
+
+[ 2016-04-23T16:26:31+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+

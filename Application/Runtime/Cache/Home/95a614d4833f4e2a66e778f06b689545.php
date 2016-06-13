@@ -75,7 +75,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="color:white">WEN DI</a>
+          <a class="navbar-brand" href="<?php echo U('Nation/index');?>" style="color:white">WEN DI</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -91,15 +91,15 @@
                 <?php else: ?>            
                  <img id="head-img" src="/graduationproject/Public/img/bg.jpg"><?php endif; ?> -->
 
-            <?php if(!empty($userImgInfo)): ?><img  id="head-img" src="/graduationproject/Public/Uploads/Users/<?php echo ($userImgInfo); ?>">
-              <?php else: ?>
-              <img id="head-img" src="/graduationproject/Public/img/default.gif"><?php endif; ?>
-          </a>
+                <?php if(!empty($userImgInfo)): ?><img  id="head-img" src="/graduationproject/Public/Uploads/Users/<?php echo ($userImgInfo); ?>">
+                  <?php else: ?>
+                  <img id="head-img" src="/graduationproject/Public/img/default.gif"><?php endif; ?>
+                    </a>
 					<!-- U('Blog/cate','cate_id=1&status=1') -->
-				</li>
-        <!-- <li>
-          <a href="" id="u-message"><span class="badge">2</span></a>
-        </li> -->
+                </li>
+                <li>
+                    <a href='<?php echo U("User/myMailBox");?>'><span class="badge"><?php echo ($messagenum); ?></span> </a>
+                </li>
 				<li><a id="log_out">退出</a></li>
 			<?php else: ?>
 				<li><a href="<?php echo U('Login/login');?>">SignIn/SignUp</a></li><?php endif; ?>
@@ -125,12 +125,12 @@
 
 <script>
 	$(function(){
-		$("li").find("#log_out").click(function(){
-			$.post('<?php echo U("Login/logOut");?>',{
-			},function(data){
-				location.reload();
-			});
-		});
+        $("li").find("#log_out").click(function(){
+            $.post('<?php echo U("Login/logOut");?>',{
+            },function(data){
+                location.href='<?php echo U("User/myMailBox");?>';
+            });
+        });
 	})
 </script>		
 
@@ -182,5 +182,107 @@
       </div>
     </footer>
 	    <script src="/graduationproject/Public/dist/js/bootstrap.min.js"></script>
+    <script>
+
+        var totalDistance = 0.0;
+        var lastLat;
+        var lastLong;
+
+//        function toRadians(degree) {
+//            return this * Math.PI / 180;
+//        }
+
+//        function distance(latitude1, longitude1, latitude2, longitude2) {
+//            // R是地球半径（KM）
+//            var R = 6371;
+//
+//            var deltaLatitude = toRadians(latitude2-latitude1);
+//            var deltaLongitude = toRadians(longitude2-longitude1);
+//            latitude1 = toRadians(latitude1);
+//            latitude2 = toRadians(latitude2);
+//
+//            var a = Math.sin(deltaLatitude/2) *
+//                    Math.sin(deltaLatitude/2) +
+//                    Math.cos(latitude1) *
+//                    Math.cos(latitude2) *
+//                    Math.sin(deltaLongitude/2) *
+//                    Math.sin(deltaLongitude/2);
+//
+//            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+//            var d = R * c;
+//            return d;
+//        }
+
+        function updateStatus(message) {
+//            document.getElementById("location-status").innerHTML = message;
+            $("#location-status").html(message);
+//            alert('没有成功获取地址');
+        }
+
+        function loadlocation() {
+            if(navigator.geolocation) {
+                updateStatus("浏览器支持HTML5 Geolocation。");
+                navigator.geolocation.watchPosition(updateLocation, handleLocationError, {maximumAge:20000});
+//                navigator.geolocation.getCurrentPosition(updateLocation, handleLocationError, {maximumAge:20000});
+//                getCurrentPosition
+            }
+        }
+
+        function updateLocation(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var accuracy = position.coords.accuracy;
+
+//            document.getElementById("latitude").innerHTML = latitude;
+//            document.getElementById("longitude").innerHTML = longitude;
+//            document.getElementById("accuracy").innerHTML = accuracy;
+            console.log(latitude,longitude,accuracy);
+            // 如果accuracy的值太大，我们认为它不准确，不用它计算距离
+//            if (accuracy >= 500) {
+//                updateStatus("这个数据太不靠谱，需要更准确的数据来计算本次移动距离。");
+//                return;
+//            }
+//
+//            // 计算移动距离
+//
+//            if ((lastLat != null) && (lastLong != null)) {
+//                var currentDistance = distance(latitude, longitude, lastLat, lastLong);
+//                document.getElementById("currDist").innerHTML =
+//                        "本次移动距离：" + currentDistance.toFixed(4) + " 千米";
+//
+//                totalDistance += currentDistance;
+//
+//                document.getElementById("totalDist").innerHTML =
+//                        "总计移动距离：" + currentDistance.toFixed(4) + " 千米";
+//            }
+
+            lastLat = latitude;
+            lastLong = longitude;
+
+            updateStatus("计算移动距离成功。lat/lng"+lastLat+"/"+lastLong);
+        }
+
+        function handleLocationError(error) {
+            switch(error.code)
+            {
+                case 0:
+                    updateStatus("尝试获取您的位置信息时发生错误：" + error.message);
+                    break;
+                case 1:
+                    updateStatus("用户拒绝了获取位置信息请求。");
+                    break;
+                case 2:
+                    updateStatus("浏览器无法获取您的位置信息：" + error.message);
+                    break;
+                case 3:
+                    updateStatus("获取您位置信息超时。");
+                    break;
+            }
+        }
+
+//        $(document).ready(function() {
+//            loadlocation();
+//        });
+    </script>
 </body>
 </html>

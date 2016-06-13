@@ -1,0 +1,75 @@
+[ 2016-06-01T19:27:20+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002316s ]
+
+[ 2016-06-01T19:28:44+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003864s ]
+
+[ 2016-06-01T19:28:45+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-06-01T19:28:58+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2016-06-01T19:28:59+08:00 ] ::1 /graduationproject/index.php/home/articles/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+
+[ 2016-06-01T19:29:01+08:00 ] ::1 /graduationproject/index.php/home/books/donatebooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+
+[ 2016-06-01T19:29:01+08:00 ] ::1 /graduationproject/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2016-06-01T19:29:13+08:00 ] ::1 /graduationproject/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2016-06-01T19:29:31+08:00 ] ::1 /graduationproject/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+
+[ 2016-06-01T19:31:37+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003917s ]
+
+[ 2016-06-01T19:31:39+08:00 ] ::1 /graduationproject/index.php/home/books/detail/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-06-01T19:31:41+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1043.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2016-06-01T19:31:43+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1043.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2016-06-01T19:31:45+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2016-06-01T19:31:46+08:00 ] ::1 /graduationproject/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+

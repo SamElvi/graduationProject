@@ -6,16 +6,16 @@ class NationController extends BaseController {
     	$this->assign('title',"National Library");
     	$book_db = D('user_books');
         $option['status'] = 1;
-        if(is_array($this->_location) && count($this->_location)==2){
-            $around = $this->getAround($this->_location['lat'],$this->_location['lng'],2000);
-            $option['lat'] = array(array('gt',$around['0']),array('lt',$around[2]));
-            $option['lng'] = array(array('gt',$around['1']),array('lt',$around[3]));
-        }
+//        if(is_array($this->_location) && count($this->_location)==2){
+//            $around = $this->getAround($this->_location['lat'],$this->_location['lng'],2000);
+//            $option['lat'] = array(array('gt',$around['0']),array('lt',$around[2]));
+//            $option['lng'] = array(array('gt',$around['1']),array('lt',$around[3]));
+//        }
     	$bookList = $book_db->getBookList($option);
-        if(count($bookList) <5){
-            $list = $book_db->getBookList(array('status'=>1));
-        }
-        $bookList = array_merge($bookList,$list);
+//        if(count($bookList) <5){
+//            $list = $book_db->getBookList(array('status'=>1));
+//        }
+//        $bookList = array_merge($bookList,$list);
     	foreach ($bookList as $key => $value) {
     		$bookList[$key]['uri'] = $this->buildUri('Books','detail',array('id'=>$value['id']));
             $bookList[$key]['content'] = unserialize($value['content']);

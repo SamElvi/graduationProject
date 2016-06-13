@@ -1,0 +1,198 @@
+[ 2016-06-13T16:28:44+08:00 ] ::1 /graduationproject/index.php/home/img/imageUpload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007249s ]
+
+[ 2016-06-13T16:28:44+08:00 ] ::1 /graduationproject/index.php/home/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+
+[ 2016-06-13T16:28:46+08:00 ] ::1 /graduationproject/index.php/home/login/trylogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = null AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: lat /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/LoginController.class.php 第 19 行.
+NOTIC: [8] Undefined index: lng /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/LoginController.class.php 第 20 行.
+SQL: SELECT `id`,`account`,`userid`,`username`,`password` FROM `gt_login` WHERE `account` = 'sam@163.com' AND `status` = 1 LIMIT 1   [ RunTime:0.0121s ]
+
+[ 2016-06-13T16:28:46+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2016-06-13T16:28:48+08:00 ] ::1 /graduationproject/index.php/home/user/user/userid/1035.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2016-06-13T16:28:48+08:00 ] ::1 /graduationproject/index.php/home/user/myspace/userid/1035.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+
+[ 2016-06-13T16:28:49+08:00 ] ::1 /graduationproject/index.php/home/img/imageupload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+
+[ 2016-06-13T16:29:06+08:00 ] ::1 /graduationproject/index.php/home/img/getimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003881s ]
+
+[ 2016-06-13T16:29:10+08:00 ] ::1 /graduationproject/index.php/home/img/savecropimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1035 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1035 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Y /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ImgController.class.php 第 111 行.
+NOTIC: [8] Only variables should be passed by reference /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 43 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 64 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [2] imagecopyresampled() expects parameter 2 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+
+[ 2016-06-13T16:29:13+08:00 ] ::1 /graduationproject/index.php/home/img/savecropimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1035 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1035 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Y /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ImgController.class.php 第 111 行.
+NOTIC: [8] Only variables should be passed by reference /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 43 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 64 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [2] imagecopyresampled() expects parameter 2 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+
+[ 2016-06-13T16:29:18+08:00 ] ::1 /graduationproject/index.php/home/img/savecropimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1035 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1035 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: Y /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ImgController.class.php 第 111 行.
+NOTIC: [8] Only variables should be passed by reference /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 43 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 64 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [2] imagecopyresampled() expects parameter 2 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+
+[ 2016-06-13T16:29:31+08:00 ] ::1 /graduationproject/index.php/home/img/getimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2016-06-13T16:29:36+08:00 ] ::1 /graduationproject/index.php/home/img/savecropimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1035 AND `status` = 0 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1035 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: Y /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ImgController.class.php 第 111 行.
+NOTIC: [8] Only variables should be passed by reference /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 43 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 64 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [2] imagecopyresampled() expects parameter 2 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+
+[ 2016-06-13T16:29:41+08:00 ] ::1 /graduationproject/index.php/home/img/imageupload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+
+[ 2016-06-13T16:30:04+08:00 ] ::1 /graduationproject/index.php/home/img/getimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2016-06-13T16:30:07+08:00 ] ::1 /graduationproject/index.php/home/img/savecropimg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1035 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1035 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: Y /Applications/XAMPP/xamppfiles/htdocs/graduationProject/Application/Home/Controller/ImgController.class.php 第 111 行.
+NOTIC: [8] Only variables should be passed by reference /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 43 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 64 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [2] imagecopyresampled() expects parameter 2 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 65 行.
+NOTIC: [8] Undefined variable: image /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, null given /Applications/XAMPP/xamppfiles/htdocs/graduationProject/ThinkPHP/Library/Org/Net/JcropImage.class.php 第 66 行.
+
+[ 2016-06-13T16:30:10+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-06-13T16:30:13+08:00 ] ::1 /graduationproject/index.php/home/books/detail/id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+
+[ 2016-06-13T16:30:15+08:00 ] ::1 /graduationproject/index.php/home/articles/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2016-06-13T16:30:16+08:00 ] ::1 /graduationproject/index.php/home/books/donatebooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2016-06-13T16:30:16+08:00 ] ::1 /graduationproject/index.php/home/books/donatebooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2016-06-13T16:30:17+08:00 ] ::1 /graduationproject/index.php/home/articles/writearticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2016-06-13T16:30:18+08:00 ] ::1 /graduationproject/index.php/home/user/mymailbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2016-06-13T16:30:18+08:00 ] ::1 /graduationproject/index.php/home/message/openmails.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gt_mail` WHERE `toid` = 1035 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`email`,`selfintroduction`,`headerimage`,`gender`,`credit`,`star`,`lat`,`lng`,`address`,`books`,`articles` FROM `gt_user` WHERE `id` = 1035 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `gt_mail` SET `status`='1' WHERE `toid` = 1035 AND `status` = 0 [ RunTime:0.0103s ]
+
+[ 2016-06-13T16:30:19+08:00 ] ::1 /graduationproject/index.php/home/nation/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
